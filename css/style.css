@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+}
+
+/* Nav Desktop */
+
+.nav-link {
+    margin-left: 40px;
+}
+
+.container-nav {
+    display: flex;
+    position: sticky;
+    height: 100px;
+    box-shadow: 0px 1px 6px #F98015;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.box-logo {
+    width: 100px;
+    height: 70px;
+    line-height: 50px;
+}
+/*  */
+
+
+.prodDest {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Footer Desktop */
+
+.contenedor-footer {
+    display: flex;
+    background: #212529;
+    margin-top: 100px;
+}
+
+.logo-redes {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    background: transparent;
+    height: 400px;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.lista-footer {
+    display: flex;
+    margin-left: 200px;
+    
+}
+
+.lista-footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.lista-footer ul li a {
+    color: white;
+}
+
+/* Productos destacados */
+
+.cards  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#btn-color {
+    background-color: #F98015;
+    border-color: #F98015;
+}
+
+
+#navbarNav {
+    justify-content: end;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+/*  */
+
+.card:hover {
+    box-shadow: 0px 1px 6px #F98015;
+
+}
+
+ 
+/* View Mobile */
+#btn-nav {
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+
+#btn-nav {
+    justify-content: space-between;
+}
+
+ .box-logo {
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+    justify-self: start;
+    } 
+
+
+header {
+    text-align: center;
+}
+
+header .container-nav {
+    display: none;
+} 
+
+.cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+}
