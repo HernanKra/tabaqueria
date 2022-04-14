@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.dropdown-menu{
+    background-color: #ebebeb !important;
+}
+
 .contenedor-slider {
     width: 100%;
     background-color: #212529;
@@ -48,7 +52,7 @@ body {
         background-position: 100vw;
     }
 }
-
+/*  */
 .box-logo {
     width: 100px;
     height: 70px;
@@ -200,13 +204,15 @@ body {
 .nav-link:hover{
     transform: scale(1.05);
     text-transform: bold;
+    transition: all 0.3s;
 }
+
 /*  */
 
 .card:hover {
     box-shadow: 0px 1px 6px #F98015;
     transform: scale(1.02);
-
+    transition: all 0.4s;
 }
 
  
@@ -247,16 +253,56 @@ header .container-nav {
 }
 
 .contenedor-footer {
-    flex-direction: column;
     align-items: center;
 }
 
-.carousel-item {
-    height: auto;
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1 {
     text-align: center;
+    font-size: 24px !important;
 }
 
+}
+
+@media (max-width: 450px) {
+
+    .pMethod img {
+        width: 60px;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+   h2 , h3{
+       text-align: center;
+   }
+
+}
+
+
+/* Productos */
+
+.section-productos {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+}
+
+#nav-productos {
+    width: 150%;
+    height: 100%;
+    margin-right: 5%;
+}
+
+#nav-productos a {
+    width: 50%;
 }
