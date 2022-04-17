@@ -88,7 +88,6 @@ body {
     padding: 10px;
 }
 
-
 .redes-sociales {
     display: flex;
     background: transparent;
@@ -102,7 +101,6 @@ body {
    filter: invert(1);
 
 }
-
 
 .lista-footer {
     display: flex;
@@ -195,7 +193,6 @@ body {
     border-color: #F98015;
 }
 
-
 #navbarNav {
     justify-content: end;
     font-size: 20px;
@@ -208,6 +205,13 @@ body {
 }
 
 /*  */
+.card {
+    transition: all 0.5s;
+}
+
+.card h5 {
+    font-weight: bold;
+}
 
 .card:hover {
     box-shadow: 0px 1px 6px #F98015;
@@ -216,7 +220,7 @@ body {
 }
 
  
-/* View Mobile */
+/* View Mobile / Tablet */
 #btn-nav {
     justify-content: end;
 }
@@ -269,6 +273,8 @@ h1 {
 
 }
 
+
+
 @media (max-width: 450px) {
 
     .pMethod img {
@@ -291,18 +297,65 @@ h1 {
 
 /* Productos */
 
-.section-productos {
-    display: flex;
+.titulo-productos {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#list-example {
+/*     margin-left: 5%; */
+    margin-top: 37px;
+}
+
+.lista-productos {
+    margin-left: 20px;
+}
+
+.section-productos  {
     width: 90%;
-    margin: 100px auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 50px;
 }
 
-#nav-productos {
-    width: 150%;
-    height: 100%;
-    margin-right: 5%;
+.group-cards {
+    width: 100%;
 }
 
-#nav-productos a {
+img.card-img-top.img-productos {
     width: 50%;
+    align-self: center;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img.card-img-top.img-productos:hover {
+    width: 90%;
+}
+
+
+@media (max-width: 768px) {
+
+    .section-productos  {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 50px;
+    }
+
+    #list-example {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 0%;
+    }
+
+    .lista-productos {
+        width: 90%;
+        margin: auto;
+    }
+
 }
