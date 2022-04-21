@@ -1,0 +1,31 @@
+.nav-link {
+    margin-left: 40px;
+}
+
+.dropdown-menu{
+    background-color: #ebebeb !important;
+}
+
+#slider {
+    width: 99vw;
+    height: 24px;
+    background-image: url(../assets/slider.png);
+    background-repeat: no-repeat;
+    animation: slider 15s infinite linear;
+}
+
+.box-logo {
+    width: 100px;
+    height: 70px;
+    line-height: 50px;
+}
+
+@keyframes slider {
+    from {
+        background-position: -20vw;
+    }
+
+    to {
+        background-position: 100vw;
+    }
+}

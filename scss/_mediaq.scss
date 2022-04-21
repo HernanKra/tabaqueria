@@ -1,0 +1,92 @@
+@media (max-width: 992px) {
+
+    #btn-nav {
+        justify-content: space-between;
+    }
+    
+    .box-logo {
+        width: 70px;
+        height: 70px;
+        line-height: 50px;
+        justify-self: start;
+    } 
+    
+    header {
+        text-align: center;
+    }
+    
+    header .container-nav {
+        display: none;
+    } 
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .contenedor-footer {
+        align-items: center;
+    }
+    
+    .section-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 24px !important;
+    }
+    
+    }
+
+@media (max-width: 450px) {
+
+    .pMethod img {
+        width: 60px;
+    }
+    
+    .form-footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    h2 , h3{
+        text-align: center;
+    }
+    
+    }
+
+@media (max-width: 768px) {
+
+    .section-productos  {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 50px;
+    }
+    
+    #list-example {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 0%;
+    }
+    
+    .lista-productos {
+        width: 90%;
+        margin: auto;
+    }
+    
+    }
+    
+    

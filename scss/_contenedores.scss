@@ -1,0 +1,28 @@
+.container-nav {
+    display: flex;
+    position: sticky;
+    height: 100px;
+    align-items: center;
+}
+
+.contenedor-slider {
+    width: 100%;
+    background-color: #212529;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-destacado {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contenedor-footer {
+    display: flex;
+    background: #212529;
+    height: 400px;
+    margin-top: 100px;
+    justify-content: space-around;
+}
