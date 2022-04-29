@@ -3,22 +3,9 @@
 @import "footer";
 @import "productos";
 @import "mediaq";
+@import "variables";
 
-/* Variables */
-$color-fondo: #ebebeb;
-$color-principal: #212529;
-$color-secundario: #F98015;
 
-* {
-    padding: 0;
-    margin:0;
-    font-family: 'Roboto', sans-serif;
-    color: $color-principal;
-}
-
-body {
-    background-color: $color-fondo;
-}
 
 
 

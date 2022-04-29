@@ -1,3 +1,5 @@
+@import "variables";
+
 .section-footer {
     display: flex;
     width: 80%;
@@ -8,6 +10,12 @@
     width: 70px;
     height: 100px;
     padding: 10px;
+    transition: all .5s;
+}
+
+.logo-redes:hover {
+    width: 100px;
+    height: 130px;
 }
 
 .redes-sociales {
@@ -17,11 +25,9 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
+    filter: invert(1);
 }
 
-.redes-sociales a:hover {
-   filter: invert(1);
-}
 
 .lista-footer {
     display: flex;
@@ -68,7 +74,7 @@
 }
 
 .copyright {
-    background-color: #212529;
+    background-color: $color-principal;
     display: inline-block;
     width: 100%;
     display: flex;
@@ -85,7 +91,7 @@
 
 .pMethod {
     display: flex;
-    background-color: #212529;
+    background-color: $color-principal;
     justify-content: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white

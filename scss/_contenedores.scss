@@ -1,3 +1,5 @@
+@import "variables";
+
 .container-nav {
     display: flex;
     position: sticky;
@@ -7,22 +9,71 @@
 
 .contenedor-slider {
     width: 100%;
-    background-color: #212529;
+    background-color: $color-principal;
     height: 30px;
     display: flex;
     align-items: center;
 }
 
-.contenedor-destacado {
-    display: flex;
-    justify-content: center;
+.tituloProd {
+    font-size: 45px;
+    font-weight: 1000;
+    text-align: center;
     margin-top: 100px;
 }
 
 .contenedor-footer {
     display: flex;
-    background: #212529;
+    background: $color-principal;
     height: 400px;
     margin-top: 100px;
     justify-content: space-around;
 }
+
+.preg-freq {
+    @extend .tituloProd;
+    margin-top: 50px;
+}
+
+.contenedor-preg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    margin-top: 50px;
+}
+
+.contenedor-preg div {
+    border-top: 1px solid;
+}
+
+$texto:(
+        "titulo": 25px,
+        "parrafo": 17px,
+        "lista": italic,
+        );
+
+
+.contenedor-preg h3 {
+    font-size: map-get($texto, titulo);
+    margin-top: 20px;
+}
+
+.contenedor-preg p {
+    font-size: map-get($texto, parrafo);
+}
+
+.contenedor-preg ul {
+    margin-left: 20px;
+    font-style: map-get($texto , lista);
+}
+
+@mixin lista($font-size, $font-weight) {
+        font-size: $font-size;
+        font-weight: $font-weight;
+}
+
+ul li {
+    @include lista(17px, 400);
+}
+
+
