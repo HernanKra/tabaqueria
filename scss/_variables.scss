@@ -1,5 +1,4 @@
 /* Variables */
-$color-fondo: #ebebeb;
 $color-principal: #212529;
 $color-secundario: #F98015;
 
@@ -10,6 +9,6 @@ $color-secundario: #F98015;
     color: $color-principal;
 }
 
-body {
-    background-color: $color-fondo;
+html {
+    scroll-behavior: smooth;
 }
