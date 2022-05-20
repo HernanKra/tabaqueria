@@ -8,11 +8,19 @@
 html {
   scroll-behavior: smooth; }
 
+#contenedor-header {
+  display: flex; }
+
 .container-nav {
   display: flex;
   position: sticky;
   height: 100px;
   align-items: center; }
+
+.contenedor-carrito {
+  display: flex;
+  align-items: center;
+  padding-right: 100px; }
 
 .contenedor-slider {
   width: 100%;
@@ -166,6 +174,9 @@ ul li {
   background-image: url(../assets/slider2.png);
   background-repeat: no-repeat;
   animation: slider 15s infinite linear; }
+
+.carrito {
+  width: 35px; }
 
 .box-logo {
   width: 100px;
@@ -347,6 +358,8 @@ img.card-img-top.img-productos {
   text-align: center; }
 
 @media (max-width: 992px) {
+  .contenedor-carrito {
+    display: none; }
   #btn-nav {
     justify-content: space-between; }
   .box-logo {
