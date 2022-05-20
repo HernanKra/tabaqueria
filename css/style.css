@@ -27,6 +27,10 @@ html {
   text-align: center;
   margin-top: 100px; }
 
+.img-in {
+  height: 350px;
+  object-fit: contain; }
+
 .contenedor-footer {
   display: flex;
   background: #212529;
@@ -159,7 +163,7 @@ ul li {
 #slider {
   width: 99vw;
   height: 24px;
-  background-image: url(../assets/slider.png);
+  background-image: url(../assets/slider2.png);
   background-repeat: no-repeat;
   animation: slider 15s infinite linear; }
 
@@ -315,6 +319,9 @@ html {
 
 .lista-productos {
   margin-left: 20px; }
+
+.list-group a {
+  font-size: 18px; }
 
 .section-productos {
   width: 90%;

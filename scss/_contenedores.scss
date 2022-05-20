@@ -22,6 +22,11 @@
     margin-top: 100px;
 }
 
+.img-in{
+    height: 350px;
+    object-fit: contain;
+}
+
 .contenedor-footer {
     display: flex;
     background: $color-principal;
